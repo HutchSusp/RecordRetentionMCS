@@ -4,7 +4,7 @@ using System.Data.Linq;
 
 namespace RetentionDraft2
 {
-    [Table(Name = "dbo.Department")]
+    [Table]
     public class Department
     {
         [Column(IsPrimaryKey = true)]
@@ -13,7 +13,7 @@ namespace RetentionDraft2
         public int Number { get; set; }
     }
 
-    [Table(Name = "dbo.Classification")]
+    [Table]
     public class Classification
     {
         [Column(IsPrimaryKey = true)]
@@ -26,7 +26,7 @@ namespace RetentionDraft2
         public double? YearsRetained { get; set; }
     }
 
-    [Table(Name = "dbo.Title")]
+    [Table]
     public class Title
     {
         [Column(IsPrimaryKey = true)]
@@ -37,7 +37,7 @@ namespace RetentionDraft2
         public string MyTitle { get; set; }
     }
 
-    [Table(Name = "dbo.Box")]
+    [Table]
     public class Box
     {
         [Column(IsPrimaryKey = true)]
@@ -56,7 +56,7 @@ namespace RetentionDraft2
         public string Description { get; set; }
     }
 
-    [Table(Name = "dbo.Record")]
+    [Table]
     public class Record
     {
         [Column(IsPrimaryKey = true)]
