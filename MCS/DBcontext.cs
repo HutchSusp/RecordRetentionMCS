@@ -88,4 +88,21 @@ namespace RetentionDraft2
         [Column(CanBeNull = true)]
         public string HoldNotes { get; set; }
     }
+
+    [Table]
+    public class Ledger
+    {
+        [Column(CanBeNull = false, IsPrimaryKey = true)]
+        string DepartmentName { get; set; }
+        [Column(CanBeNull = true, IsPrimaryKey = true)]
+        string ClassificationName { get; set; }
+        [Column(CanBeNull = true, IsPrimaryKey = true)]
+        string TitleName { get; set; }
+        [Column(CanBeNull = false, IsPrimaryKey = true)]
+        DateTime DateChanged { get; set; }
+        [Column(CanBeNull = false)]
+        string Change { get; set; }
+        [Column(CanBeNull = false)]
+        string Notes { get; set; }
+    }
 }
